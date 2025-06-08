@@ -25,19 +25,19 @@ const Header: React.FC = () => {
           {/* Menu de navegação - Desktop */}
           <nav className="hidden md:block">
             <div className="flex items-center space-x-8">
-              <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Home
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Sobre
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Bicicletas
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Acessórios
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Contato
               </a>
             </div>
@@ -49,18 +49,18 @@ const Header: React.FC = () => {
               <input
                 type="text"
                 placeholder="Buscar bicicletas..."
-                className="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                className="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-offset-black focus:border-black outline-none"
               />
-              <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+              <Search className="absolute left-3 top-2.5 h-5 w-5 text-black" />
             </div>
           </div>
 
           {/* Ícones do lado direito - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="text-gray-700 hover:text-blue-600 transition-colors">
+            <button className="text-black cursor-pointer">
               <User className="h-6 w-6" />
             </button>
-            <button className="text-gray-700 hover:text-blue-600 transition-colors relative">
+            <button className="text-black cursor-pointer">
               <ShoppingCart className="h-6 w-6" />
              
             </button>
@@ -69,7 +69,7 @@ const Header: React.FC = () => {
           {/* Botão do menu hambúrguer - Mobile */}
           <button
             onClick={toggleMenu}
-            className="md:hidden text-gray-700 hover:text-blue-600 transition-colors"
+            className="md:hidden text-black"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -78,45 +78,45 @@ const Header: React.FC = () => {
 
         {/* Menu Mobile - Dropdown */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-50 rounded-lg mt-2">
+          <div className="md:hidden absolute bottom-full-full left-0 w-screen bg-gray-100 z-50 opacity-95">
+            <div className=" flex flex-col items-center pt-3 pb-3 mt-2">
               
               {/* Barra de busca mobile */}
               <div className="relative mb-4">
                 <input
                   type="text"
                   placeholder="Buscar bicicletas..."
-                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-offset-black focus:border-black outline-none"
                 />
-                <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+                <Search className="absolute left-3 top-2.5 h-5 w-5 text-black" />
               </div>
               
               {/* Links de navegação mobile */}
-              <a href="#" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Home
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Bicicletas
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Acessórios
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Sobre
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium transition-colors">
+              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Contato
               </a>
               
               {/* Botões mobile */}
               <div className="flex items-center space-x-4 px-3 py-2 border-t border-gray-200 mt-4 pt-4">
-                <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center space-x-2">
+                <button className="text-black flex items-center space-x-2 cursor-pointer">
                   <User className="h-5 w-5" />
-                  <span>Login</span>
+                  <span className="text-black">Login</span>
                 </button>
-                <button className="text-gray-700 hover:text-blue-600 transition-colors flex items-center space-x-2 relative">
+                <button className="text-black  flex items-center space-x-2 relative cursor-pointer">
                   <ShoppingCart className="h-5 w-5" />
-                  <span>Carrinho</span>
+                  <span className="text-black">Carrinho</span>
                   
                 </button>
               </div>

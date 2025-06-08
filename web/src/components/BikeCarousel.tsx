@@ -108,7 +108,7 @@ export default function BikeCarousel({
                   <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 transform transition-all duration-700 delay-100">
                     {slide.title}
                   </h2>
-                  <p className="text-xl sm:text-2xl lg:text-3xl mb-4 text-cyan-300 font-semibold transform transition-all duration-700 delay-200">
+                  <p className="text-xl sm:text-2xl lg:text-3xl mb-4 text-white font-semibold transform transition-all duration-700 delay-200">
                     {slide.subtitle}
                   </p>
                   <p className="text-lg sm:text-xl text-gray-300 leading-relaxed transform transition-all duration-700 delay-300">
@@ -116,8 +116,8 @@ export default function BikeCarousel({
                   </p>
                   
                   {/* CTA Button */}
-                  <button className="mt-8 px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/25 hover:scale-105 transform delay-400">
-                    Comprar
+                  <button className="mt-8 px-8 py-3 bg-transparent text-white font-semibold rounded-full border-2 border-white hover:bg-white hover:text-black transition-colors duration-300">
+                    Ver modelos
                   </button>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function BikeCarousel({
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentSlide
-                  ? 'bg-cyan-400 w-8 shadow-lg shadow-cyan-400/50'
+                  ? 'bg-white w-8 shadow-lg shadow-cyan-400/50'
                   : 'bg-white/50 hover:bg-white/70'
               }`}
               aria-label={`Go to slide ${index + 1}`}
@@ -176,9 +176,9 @@ export default function BikeCarousel({
       </div>
 
       {/* Progress Bar */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-white/20">
+      <div className="absolute top-0 left-0 w-full h-1 bg-white">
         <div
-          className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300"
+          className="h-full bg-gradient-to-r from-black to-black transition-all duration-300"
           style={{ width: `${((currentSlide + 1) / slides.length) * 100}%` }}
         />
       </div>
