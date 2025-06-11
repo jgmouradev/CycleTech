@@ -43,8 +43,8 @@ const BikeEcommerce = () => {
     {
       id: 1,
       nome: "Mountain Bike Trek X-Caliber",
-      preco: 2899.99,
-      parcelas: "12x R$ 241,66",
+      preco: 4500.00,
+      parcelas: "12x R$ 375,00",
       imagem: Xcaliber,
       marca: "Trek",
       tamanho: "M",
@@ -55,8 +55,8 @@ const BikeEcommerce = () => {
     {
       id: 2,
       nome: "Speed Bike Specialized Allez",
-      preco: 3499.99,
-      parcelas: "12x R$ 291,66",
+      preco: 3200.00,
+      parcelas: "12x R$ 266,66",
       imagem: Allez,
       marca: "Specialized",
       tamanho: "L",
@@ -67,8 +67,8 @@ const BikeEcommerce = () => {
     {
       id: 3,
       nome: "Urban Bike Cannondale Quick",
-      preco: 1899.99,
-      parcelas: "10x R$ 189,99",
+      preco: 1400.00,
+      parcelas: "10x R$ 116,66",
       imagem: Quick,
       marca: "Cannondale",
       tamanho: "S",
@@ -91,8 +91,8 @@ const BikeEcommerce = () => {
     {
       id: 5,
       nome: "Speed Bike Scott Speedster",
-      preco: 4199.99,
-      parcelas: "12x R$ 349,99",
+      preco: 4000.00,
+      parcelas: "12x R$ 333,33",
       imagem: Scoot,
       marca: "Scott",
       tamanho: "L",
@@ -420,7 +420,7 @@ const BikeEcommerce = () => {
 
                         <button className="w-full bg-blue-500 text-white py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl text-sm sm:text-base font-bold flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors">
                           <ShoppingCart className="w-4 h-4 sm:w-5 sm:h-5" />
-                          Comprar Agora
+                          Comprar
                         </button>
                       </div>
                     </div>
