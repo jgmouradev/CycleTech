@@ -157,7 +157,7 @@ export default function BikeCarousel({
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentSlide
-                  ? 'bg-white w-8 shadow-lg shadow-cyan-400/50'
+                  ? 'bg-white w-8'
                   : 'bg-white/50 hover:bg-white/70'
               }`}
               aria-label={`Go to slide ${index + 1}`}
