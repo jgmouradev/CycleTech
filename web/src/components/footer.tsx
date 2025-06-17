@@ -17,7 +17,7 @@ const Footer = () => {
               <div className="w-20 h-20 sm:w-25 sm:h-25 rounded-lg flex items-center justify-center">
                 <img src={logotipo} alt="Logotipo do Header" className="max-w-full h-auto" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-black">BikeShop Pro</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-black">CycleTech</h3>
             </div>
             <p className="text-gray-900 text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-none">
               Sua paixão por pedalar começa aqui! Oferecemos as melhores bicicletas, 

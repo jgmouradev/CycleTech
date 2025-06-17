@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-
-import { Menu, X, Search, ShoppingCart, User } from 'lucide-react';
-
+import { Menu, X, Search, ShoppingCart, User, Home } from 'lucide-react';
 import logotipo from "../assets/images/logo.png"
-
+import { Link } from 'react-router-dom';
+import { About } from '../pages/about';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -25,27 +24,31 @@ const Header: React.FC = () => {
           {/* Menu de navegação - Desktop */}
           <nav className="hidden md:block">
             <div className="flex items-center space-x-8">
-              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
+              <Link to='/home'  className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Home
-              </a>
-              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
+              </Link>
+              <Link to='/about' className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Sobre
-              </a>
-              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
+              </Link>
+              <Link to='/bicycles' className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Bicicletas
-              </a>
-              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
+              </Link>
+              <Link to='/acessories' className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Acessórios
-              </a>
-              <a href="#" className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
+              </Link>
+              <Link to='/SalesProducts' className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
+                Ofertas
+              </Link>
+              <Link to='/contact' className="text-black hover:underline underline-offset-8 px-3 py-2 text-sm font-medium transition-colors">
                 Contato
-              </a>
+              </Link>
+
             </div>
           </nav>
 
           {/* Barra de busca - Desktop */}
           <div className="hidden md:flex items-center">
-            <div className="relative">
+            <div className="relative m-6">
               <input
                 type="text"
                 placeholder="Buscar bicicletas..."

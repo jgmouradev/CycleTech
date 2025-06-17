@@ -122,9 +122,7 @@ export default function BikeCarousel({
                 </div>
               </div>
 
-              {/* Decorative Elements */}
-              <div className="absolute top-10 left-10 w-20 h-20 bg-cyan-500/20 rounded-full blur-xl animate-pulse"></div>
-              <div className="absolute bottom-10 right-10 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+              
             </div>
           ))}
         </div>
