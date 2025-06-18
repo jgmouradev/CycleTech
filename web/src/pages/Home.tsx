@@ -1,13 +1,6 @@
 import  { useState } from 'react';
 import { ShoppingCart, Filter, Star, Heart } from 'lucide-react';
 
-import Xcaliber from "../assets/bikesImages/trek/off/xcaliber.jpg"
-import Scoot from "../assets/bikesImages/scoot/off/scoot.jpg"
-import Allez from "../assets/bikesImages/specialized/off/allez.jpg"
-import Quick from "../assets/bikesImages/cannondale/off/quick.jpeg"
-import Electra from "../assets/bikesImages/electra/electra.jpg"
-import Talon from "../assets/bikesImages/giant/off/talon.jpg"
-
 import Trail from "../assets/images/destaques/cannondale Trail SL 4 7990,00.jpg"
 import CapaceteGiro from "../assets/images/destaques/capacete giro.jpg"
 import Farol from "../assets/images/destaques/Farol Inton 1800 Lumens.jpg"
