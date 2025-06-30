@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import { ShoppingCart, Filter, Star, Heart } from 'lucide-react';
+import { useCart } from '../components/Header';
 
 import Trail from "../assets/images/destaques/cannondale Trail SL 4 7990,00.jpg"
 import CapaceteGiro from "../assets/images/destaques/capacete giro.jpg"
@@ -30,7 +31,10 @@ interface Filtros {
   preco: [number, number];
 }
 
-const SalesProducts = () => {
+const FeaturedProducts = () => {
+
+ const { addToCart } = useCart();
+
   const [selectedFilters, setSelectedFilters] = useState<Filtros>({
     marca: [],
     tamanho: [],
@@ -141,6 +145,12 @@ const SalesProducts = () => {
       style: 'currency',
       currency: 'BRL'
     }).format(price);
+  };
+
+  const handleAddToCart = (produto: Produto) => {
+    addToCart(produto);
+    // Opcional: Mostrar notificação de sucesso
+    alert(`${produto.nome} foi adicionado ao carrinho!`);
   };
 
   // Função para filtrar produtos
@@ -385,7 +395,8 @@ const SalesProducts = () => {
                           </span>
                         </div>
 
-                        <button className="w-full bg-blue-500 text-white py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl text-sm sm:text-base font-bold flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors">
+                        <button  onClick={() => handleAddToCart(produto)}
+                              className="w-full bg-blue-500 text-white py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl text-sm sm:text-base font-bold flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors">
                           <ShoppingCart className="w-4 h-4 sm:w-5 sm:h-5" />
                           Comprar
                         </button>
@@ -408,4 +419,4 @@ const SalesProducts = () => {
   );
 };
 
-export default SalesProducts;
+export default FeaturedProducts;
