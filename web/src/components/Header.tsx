@@ -421,7 +421,7 @@ const Header: React.FC = () => {
               <div className="flex items-center space-x-4 px-3 py-2 border-t border-gray-200 mt-4 pt-4">
                 
                 <Link to="/login">
-                <div className="text-black flex items-center space-x-2 cursor-pointer p-2 border rounded hover:bg-gray-100">
+                <div className="text-black flex items-center space-x-2 cursor-pointer p-2  hover:bg-gray-100">
                   <User className="h-5 w-5" />
                   <span className="text-black">Login</span>
                 </div>
