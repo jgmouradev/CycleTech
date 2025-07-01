@@ -11,6 +11,7 @@ import  Accessories  from './pages/Accessories';
 import SalesProducts from './pages/SalesProducts';
 import { Contact } from './pages/Contact';
 import CheckOut from '../src/components/carrinho/Checkout'
+import Login from '../src/components/login/login'
 
 
 
@@ -30,6 +31,7 @@ const App: React.FC = () => {
         <Route path="/SalesProducts" element={<SalesProducts/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/checkout" element={<CheckOut/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
         <Footer/>
         </CartProvider>

@@ -3,6 +3,7 @@ import { Menu, X, Search, ShoppingCart, User, Home, Minus, Plus, Trash2 } from '
 import logotipo from "../assets/images/logo.png"
 import { Link } from 'react-router-dom';
 
+
 // Importações das imagens dos produtos
 import Trail from "../assets/images/destaques/cannondale Trail SL 4 7990,00.jpg"
 import CapaceteGiro from "../assets/images/destaques/capacete giro.jpg"
@@ -10,6 +11,8 @@ import Farol from "../assets/images/destaques/Farol Inton 1800 Lumens.jpg"
 import Oculos from "../assets/images/destaques/oculos_ciclismo_rockbros_577_1_a6aec999fcb6df4d9c4b43abd9a4d2b5.jpg"
 import Speed from "../assets/images/destaques/SPEEDSTER 10.jpg"
 import Sinalizador from "../assets/images/destaques/sinalizador Rontek.jpg"
+
+
 
 // Interface para produtos da loja
 interface Produto {
@@ -114,6 +117,7 @@ interface CartContextType {
   updateQuantity: (id: number, quantity: number) => void;
   getTotalItems: () => number;
   getTotalPrice: () => number;
+  clearCart: () => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -126,6 +130,7 @@ export const useCart = () => {
   }
   return context;
 };
+
 
 // Provider do carrinho
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -181,6 +186,12 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
   };
 
+  const clearCart = () => {
+  setCartItems([]);
+};
+
+
+
   return (
     <CartContext.Provider value={{
       cartItems,
@@ -188,7 +199,8 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       removeFromCart,
       updateQuantity,
       getTotalItems,
-      getTotalPrice
+      getTotalPrice,
+       clearCart
     }}>
       {children}
     </CartContext.Provider>
@@ -407,10 +419,13 @@ const Header: React.FC = () => {
               
               {/* Botões mobile */}
               <div className="flex items-center space-x-4 px-3 py-2 border-t border-gray-200 mt-4 pt-4">
-                <button className="text-black flex items-center space-x-2 cursor-pointer">
+                
+                <Link to="/login">
+                <div className="text-black flex items-center space-x-2 cursor-pointer p-2 border rounded hover:bg-gray-100">
                   <User className="h-5 w-5" />
                   <span className="text-black">Login</span>
-                </button>
+                </div>
+              </Link>
                 <button 
                   onClick={toggleCart}
                   className="text-black flex items-center space-x-2 relative cursor-pointer"
