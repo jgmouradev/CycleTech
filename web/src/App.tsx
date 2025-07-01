@@ -2,7 +2,7 @@ import React from 'react'
 import Header, { CartProvider } from './components/Header'
 import BikeCarousel from './components/BikeCarousel'
 import Footer from './components/footer';
-import { Routes,Route, Link } from 'react-router-dom';
+import { Routes,Route,} from 'react-router-dom';
 
 import Home from './pages/Home';
 import { About } from './pages/About';

@@ -1,5 +1,5 @@
 import React, { useState, createContext, useContext } from 'react';
-import { Menu, X, Search, ShoppingCart, User, Home, Minus, Plus, Trash2 } from 'lucide-react';
+import { Menu, X, Search, ShoppingCart, User, Minus, Plus, Trash2 } from 'lucide-react';
 import logotipo from "../assets/images/logo.png"
 import { Link } from 'react-router-dom';
 

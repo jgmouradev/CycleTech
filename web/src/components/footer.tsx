@@ -1,5 +1,5 @@
 
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, Bike } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin,} from 'lucide-react';
 import logotipo from "../assets/images/logo.png"
 
 const Footer = () => {
