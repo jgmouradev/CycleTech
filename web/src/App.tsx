@@ -2,7 +2,7 @@ import React from 'react'
 import Header, { CartProvider } from './components/Header'
 import BikeCarousel from './components/BikeCarousel'
 import Footer from './components/footer';
-import { Routes,Route } from 'react-router-dom';
+import { Routes,Route, Link } from 'react-router-dom';
 
 import Home from './pages/Home';
 import { About } from './pages/About';
@@ -23,8 +23,9 @@ const App: React.FC = () => {
       
        <BikeCarousel 
         autoPlayInterval={5000}/>
+       
         <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/about" element={<About />} />
         <Route path="/bicycles" element={<Bicycles />} />
         <Route path="/acessories" element={<Accessories/>} />
@@ -32,7 +33,7 @@ const App: React.FC = () => {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/checkout" element={<CheckOut/>} />
         <Route path="/login" element={<Login/>} />
-      </Routes>
+        </Routes>
         <Footer/>
         </CartProvider>
    </div>

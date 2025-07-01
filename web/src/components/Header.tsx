@@ -356,9 +356,9 @@ const Header: React.FC = () => {
 
           {/* Ícones do lado direito - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="text-black cursor-pointer">
-              <User className="h-6 w-6" />
-            </button>
+           <Link to="/login" className="text-black">
+              <User className="h-6 w-6 cursor-pointer" />
+            </Link>
             <div className="relative">
               <button 
                 onClick={toggleCart}
