@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 
 // Importações das imagens dos produtos
-import Trail from "../assets/images/destaques/cannondale Trail SL 4 7990,00.jpg"
+/*import Trail from "../assets/images/destaques/cannondale Trail SL 4 7990,00.jpg"
 import CapaceteGiro from "../assets/images/destaques/capacete giro.jpg"
 import Farol from "../assets/images/destaques/Farol Inton 1800 Lumens.jpg"
 import Oculos from "../assets/images/destaques/oculos_ciclismo_rockbros_577_1_a6aec999fcb6df4d9c4b43abd9a4d2b5.jpg"
 import Speed from "../assets/images/destaques/SPEEDSTER 10.jpg"
-import Sinalizador from "../assets/images/destaques/sinalizador Rontek.jpg"
+import Sinalizador from "../assets/images/destaques/sinalizador Rontek.jpg" */
 
 
 
@@ -40,74 +40,74 @@ interface CartItem {
 }
 
 // Array de produtos da loja
-const produtos: Produto[] = [
-  {
-    id: 1,
-    nome: "Cannondale Trail",
-    preco: 7500.00,
-    parcelas: "12x R$ 625,00",
-    imagem: Trail,
-    marca: "Cannondale",
-    tamanho: "M",
-    tipo: "Mountain",
-    avaliacao: 4.8
-  },
-  {
-    id: 2,
-    nome: "Capacete Giro",
-    preco: 320.00,
-    parcelas: "10x R$ 32,00",
-    imagem: CapaceteGiro,
-    marca: "Giro",
-    tamanho: "L",
-    tipo: "Speed",
-    avaliacao: 4.9
-  },
-  {
-    id: 3,
-    nome: "Farol Inton 1800 Lumens",
-    preco: 385.00,
-    parcelas: "10x R$ 38,50",
-    imagem: Farol,
-    marca: "Inton",
-    tamanho: "S",
-    tipo: "Urban",
-    avaliacao: 4.6
-  },
-  {
-    id: 4,
-    nome: "Óculos Rockbros",
-    preco: 199.00,
-    parcelas: "05x R$ 39,80",
-    imagem: Oculos,
-    marca: "Rockbros",
-    tamanho: "M",
-    tipo: "Mountain",
-    avaliacao: 4.7
-  },
-  {
-    id: 5,
-    nome: "Speed Bike Scott Speedster 10",
-    preco: 8970.00,
-    parcelas: "12x R$ 747,50",
-    imagem: Speed,
-    marca: "Scott",
-    tamanho: "L",
-    tipo: "Speed",
-    avaliacao: 4.9
-  },
-  {
-    id: 6,
-    nome: "Sinalizador Rontek",
-    preco: 60.00,
-    parcelas: "02x R$ 30,00",
-    imagem: Sinalizador,
-    marca: "Rontek",
-    tamanho: "M",
-    tipo: "Urban",
-    avaliacao: 4.5
-  }
-];
+// const produtos: Produto[] = [
+//   {
+//     id: 1,
+//     nome: "Cannondale Trail",
+//     preco: 7500.00,
+//     parcelas: "12x R$ 625,00",
+//     imagem: Trail,
+//     marca: "Cannondale",
+//     tamanho: "M",
+//     tipo: "Mountain",
+//     avaliacao: 4.8
+//   },
+//   {
+//     id: 2,
+//     nome: "Capacete Giro",
+//     preco: 320.00,
+//     parcelas: "10x R$ 32,00",
+//     imagem: CapaceteGiro,
+//     marca: "Giro",
+//     tamanho: "L",
+//     tipo: "Speed",
+//     avaliacao: 4.9
+//   },
+//   {
+//     id: 3,
+//     nome: "Farol Inton 1800 Lumens",
+//     preco: 385.00,
+//     parcelas: "10x R$ 38,50",
+//     imagem: Farol,
+//     marca: "Inton",
+//     tamanho: "S",
+//     tipo: "Urban",
+//     avaliacao: 4.6
+//   },
+//   {
+//     id: 4,
+//     nome: "Óculos Rockbros",
+//     preco: 199.00,
+//     parcelas: "05x R$ 39,80",
+//     imagem: Oculos,
+//     marca: "Rockbros",
+//     tamanho: "M",
+//     tipo: "Mountain",
+//     avaliacao: 4.7
+//   },
+//   {
+//     id: 5,
+//     nome: "Speed Bike Scott Speedster 10",
+//     preco: 8970.00,
+//     parcelas: "12x R$ 747,50",
+//     imagem: Speed,
+//     marca: "Scott",
+//     tamanho: "L",
+//     tipo: "Speed",
+//     avaliacao: 4.9
+//   },
+//   {
+//     id: 6,
+//     nome: "Sinalizador Rontek",
+//     preco: 60.00,
+//     parcelas: "02x R$ 30,00",
+//     imagem: Sinalizador,
+//     marca: "Rontek",
+//     tamanho: "M",
+//     tipo: "Urban",
+//     avaliacao: 4.5
+//   }
+// ];
 
 // Context para o carrinho
 interface CartContextType {
